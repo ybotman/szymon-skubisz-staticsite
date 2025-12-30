@@ -39,7 +39,8 @@ szymon/
 │   │   ├── about/        # About page
 │   │   ├── portfolio/    # Portfolio/Projects
 │   │   ├── resume/       # Resume page
-│   │   └── contact/      # Contact page
+│   │   ├── contact/      # Contact page
+│   │   └── built-by/     # Hidden SEO credit page (not in nav)
 │   ├── components/       # Reusable UI components
 │   └── lib/              # Utilities and helpers
 ├── public/               # Static assets (images, resume PDF)
@@ -93,6 +94,20 @@ Reference materials in `source-docs/` folder (not committed to git):
 - [ ] Image alt text on all images
 - [ ] Loading speed < 2 seconds
 - [ ] Lighthouse SEO score 95+
+
+### Hidden "Built By" Credit Page
+
+A public but unlisted page at `/built-by` for SEO credit:
+- **URL**: `/built-by` (included in sitemap, not in navigation)
+- **Purpose**: SEO backlink and credit for the builder company
+- **Content**:
+  - Company name and logo
+  - Brief description of services offered
+  - Link back to company website
+  - "We built this site for Szymon Skubisz" testimonial-style text
+  - Contact info for web development inquiries
+- **SEO**: Full meta tags, JSON-LD Organization schema
+- **Note**: Page is crawlable but not linked from main navigation
 
 ---
 
