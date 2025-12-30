@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="container mx-auto px-4 py-16 max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Get in Touch</h1>
         <p className="text-xl text-slate-300 mb-12">
-          Interested in discussing engineering opportunities or collaborations? I'd love to hear from you.
+          Interested in discussing engineering opportunities or collaborations? I&apos;d love to hear from you.
         </p>
 
         <div className="space-y-6">
