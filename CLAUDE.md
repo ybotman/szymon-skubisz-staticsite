@@ -53,7 +53,7 @@ szymon/
 
 ## Source Documents
 
-Reference materials in project root:
+Reference materials in `source-docs/` folder (not committed to git):
 - `Szymon Skubisz Design Engineering Resume - 12.03.25.pdf` - Resume content
 - `Engineering Portfolio - NDA Safe - 11.09.25.pdf` - Portfolio projects
 - `SharkNinja - Senior Product Design Engineer - 12.22.25.pdf` - Example target role

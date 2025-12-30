@@ -34,6 +34,9 @@ npm-debug.log*
 # Vercel
 .vercel
 
+# Source documents (private)
+source-docs/
+
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
