@@ -60,14 +60,39 @@ Reference materials in project root:
 
 ---
 
-## SEO Requirements
+## SEO & AI Discoverability Requirements
 
-1. **Meta tags** on every page (title, description, og:image)
-2. **Structured data** (JSON-LD for Person schema)
-3. **sitemap.xml** auto-generated
+### Google Search Optimization
+1. **Meta tags** on every page (title, description, og:image, og:type)
+2. **Structured data** (JSON-LD for Person, WebSite, and ProfilePage schemas)
+3. **sitemap.xml** auto-generated via Next.js
 4. **robots.txt** allowing all crawlers
-5. **Semantic HTML** (proper heading hierarchy, landmarks)
-6. **Fast loading** (optimized images, minimal JS)
+5. **Semantic HTML** (proper heading hierarchy, landmarks, ARIA labels)
+6. **Fast loading** (Core Web Vitals optimized)
+7. **Mobile-first** responsive design
+8. **Canonical URLs** on all pages
+
+### AI Search & LLM Discoverability
+1. **Clear, descriptive content** - Write content that AI systems can parse and summarize
+2. **Structured data rich** - Comprehensive JSON-LD schemas for:
+   - `Person` (name, jobTitle, skills, education, experience)
+   - `WebSite` (site name, description, author)
+   - `ProfilePage` (main entity of page)
+3. **llms.txt** file in root - AI-friendly site summary
+4. **Natural language content** - Avoid jargon, use complete sentences
+5. **Keyword-rich headings** - "Szymon Skubisz - Design Engineer" in H1
+6. **About/Bio section** - Detailed professional summary for AI context
+7. **Skills taxonomy** - Clearly listed and categorized skills
+8. **Open Graph metadata** - Rich previews for AI assistants
+
+### Technical SEO Checklist
+- [ ] Google Search Console verified
+- [ ] sitemap.xml submitted to Google
+- [ ] No broken links (404s)
+- [ ] Proper 301 redirects if needed
+- [ ] Image alt text on all images
+- [ ] Loading speed < 2 seconds
+- [ ] Lighthouse SEO score 95+
 
 ---
 
