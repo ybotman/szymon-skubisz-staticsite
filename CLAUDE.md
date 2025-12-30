@@ -22,9 +22,44 @@ Build a modern, professional personal website for **Szymon Skubisz**, a Design E
 
 - **Framework**: Next.js 14+ (App Router)
 - **Styling**: Tailwind CSS
-- **Hosting**: Vercel
+- **Hosting**: Vercel (Free tier)
 - **SEO**: Next.js metadata API, sitemap.xml, robots.txt
 - **Analytics**: Vercel Analytics (optional)
+
+---
+
+## Git Branching & Deployment Strategy
+
+### Branches
+| Branch | Purpose | Vercel Deployment |
+|--------|---------|-------------------|
+| `main` | Development & staging | Preview (pre-prod) |
+| `PROD` | Production releases | Production |
+
+### Workflow
+1. **Build** on `main` branch
+2. **Review** via Vercel Preview URL (auto-deployed on push)
+3. **Approve** locally after testing preview
+4. **Merge** `main` → `PROD` for production release
+5. Vercel auto-deploys `PROD` to production URL
+
+### Vercel Settings (configure in dashboard)
+- **Production Branch**: `PROD`
+- **Preview Branches**: `main` (and any PRs)
+- **Auto-deploy**: Enabled for both
+
+### Commands
+```bash
+# Development
+git checkout main
+# ... make changes ...
+git add . && git commit -m "message" && git push
+
+# Promote to Production
+git checkout PROD
+git merge main
+git push
+```
 
 ---
 
@@ -125,8 +160,9 @@ A public but unlisted page at `/built-by` for SEO credit:
 
 - **START**: Initialize session, review documents, propose site structure
 - **BUILD**: Begin development on approved section
-- **PREVIEW**: Run local dev server for review
-- **DEPLOY**: Prepare for Vercel deployment
+- **PREVIEW**: Run local dev server (`npm run dev`)
+- **PUSH**: Commit and push to `main` for Vercel preview
+- **PROMOTE**: Merge `main` to `PROD` for production deployment
 
 ---
 
