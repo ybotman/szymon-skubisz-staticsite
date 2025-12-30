@@ -134,11 +134,13 @@ Reference materials in `source-docs/` folder (not committed to git):
 
 A public but unlisted page at `/built-by` for SEO credit:
 - **URL**: `/built-by` (included in sitemap, not in navigation)
-- **Purpose**: SEO backlink and credit for the builder company
+- **Purpose**: SEO backlinks and credit for the builder
 - **Content**:
-  - Company name and logo
+  - "Built by" credit with links to:
+    - **HDTS LLC** - [htdsllc.com](https://htdsllc.com)
+    - **Toby Balsley** - [tobybalsley.com](https://tobybalsley.com)
+    - **YbotMan** - [ybotman.com](https://ybotman.com)
   - Brief description of services offered
-  - Link back to company website
   - "We built this site for Szymon Skubisz" testimonial-style text
   - Contact info for web development inquiries
 - **SEO**: Full meta tags, JSON-LD Organization schema
